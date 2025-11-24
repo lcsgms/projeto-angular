@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Zone - Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Botão voltar ao topo */
+        #btnTopo {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            display: none;
+            z-index: 1100;
+            width: 48px;
+            height: 48px;
+            padding: 0;
+            border-radius: 50%;
+            font-size: 22px;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.png" height="40" class="me-2" alt="Logo Gamer Zone">
+                Gamer Zone
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/banner1.png" class="d-block w-100" alt="Promoção da Semana">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner2.png" class="d-block w-100" alt="Novidades em Consoles">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner3.png" class="d-block w-100" alt="Acessórios RGB">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+
+    </div>
+
+    <!-- PRODUTOS -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Produtos em Destaque</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/jogo1.png" alt="Jogo 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Jogo 1</h5>
+                        <p class="card-text">Jogo do ano.</p>
+                        <p><strong>R$ 149,90</strong></p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/jogo2.png" alt="Jogo 2" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Jogo 2</h5>
+                        <p class="card-text">Jogo top de linha.</p>
+                        <p><strong>R$ 399,00</strong></p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/jogo3.png" alt="Jogo 3" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Jogo 3</h5>
+                        <p class="card-text">Melhor de todos.</p>
+                        <p><strong>R$ 259,50</strong></p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">Desenvolvido por Lucas Gomes de Lima - 2025</p>
+        </div>
+    </footer>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button id="btnTopo" class="btn btn-secondary">↑</button>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const btnTopo = document.getElementById("btnTopo");
+
+        window.addEventListener("scroll", () => {
+            btnTopo.style.display = window.scrollY > 200 ? "flex" : "none";
+        });
+
+        btnTopo.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+</body>
+
+</html>
+

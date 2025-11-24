@@ -1,0 +1,44 @@
+ 🎮 Gamer Zone
+
+Projeto desenvolvido como parte da Atividade SP2 - Desenvolvimento da Página index e login do site gamer.
+
+---
+
+ 📌 Objetivo
+Criar duas páginas front-end com HTML5, CSS3, Bootstrap, JavaScript e jQuery, garantindo responsividade e boas práticas de desenvolvimento web.
+
+---
+
+🚀 Funcionalidades
+
+ Página Home (index.html)
+- ✅ Navbar responsiva com links simulados  
+- ✅ Carrossel de banners com imagens personalizadas  
+- ✅ Galeria de produtos em destaque com cards (imagem, título, descrição, preço e botão “Comprar”)  
+- ✅ Rodapé com nome e ano  
+- ✅ Botão “Voltar ao topo” com JavaScript  
+
+Página Login (login.html)
+- ✅ Navbar responsiva  
+- ✅ Formulário de Login (E-mail e Senha)  
+- ✅ Formulário de Cadastro (Nome, E-mail, Senha, Confirmação de senha)  
+- ✅ Botões de alternância com jQuery para mostrar/esconder formulários  
+
+---
+
+🖼️ Estrutura de Pastas
+
+
+---
+
+🛠️ Tecnologias Utilizadas
+- HTML5  
+- CSS3  
+- [Bootstrap 5](https://getbootstrap.com/)  
+- JavaScript  
+- jQuery  
+
+---
+
+👨‍💻 Autor
+Desenvolvido por Lucas Gomes de Lima - 2025
